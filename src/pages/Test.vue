@@ -2,7 +2,7 @@
   <el-upload
     :file-list="fileList"
     class="upload-demo"
-    action="localhost:3000/"
+    action="http://localhost:3000/admin/upload"
     multiple
     :on-preview="handlePreview"
     :on-remove="handleRemove"
@@ -10,7 +10,7 @@
     :limit="3"
     :on-exceed="handleExceed"
   >
-    <el-button type="primary">上传</el-button>
+    <el-button type="primary">Click to upload</el-button>
     <template #tip>
       <div class="el-upload__tip">
         jpg/png files with a size less than 500KB.
@@ -25,7 +25,7 @@ import { ElMessage, ElMessageBox } from 'element-plus'
 import type { UploadProps, UploadUserFile } from 'element-plus'
 
 const fileList = ref<UploadUserFile[]>([
-  
+
 ])
 
 const handleRemove: UploadProps['onRemove'] = (file, uploadFiles) => {

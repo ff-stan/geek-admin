@@ -18,7 +18,10 @@ const http = {
     post(url,data){
         const config = {
             method: 'post',
-            url:url
+            url:url,
+            headers:{
+                'token':`${localStorage.getItem('token')}`
+            }
         }
         if(data) config.data = data
         return request(config)
