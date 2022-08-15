@@ -9,6 +9,12 @@
     <router-link to="/articlesList">
       <el-menu-item index="3">新闻</el-menu-item>
     </router-link>
+    <router-link to="/">
+      <el-menu-item index="4">榜单</el-menu-item>
+    </router-link>
+    <router-link to="/">
+      <el-menu-item index="5">热点</el-menu-item>
+    </router-link>
   </el-menu>
 </template>
 <script setup>

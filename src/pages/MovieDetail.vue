@@ -6,7 +6,10 @@
       </el-header>
         <el-container>
           <el-main>
-            <h2>{{ movieData.movieName }}</h2>
+            <div class="demo-image">
+              <el-image style="width: 250px; height: 300px" :src="movieData.movieImg" :fit="cover" />
+              <h2>{{ movieData.movieName }}</h2>
+            </div>
             <el-divider> 电影介绍 </el-divider>
             <p>
               {{ movieData.movieContext }}
