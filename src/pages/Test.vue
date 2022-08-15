@@ -30,7 +30,7 @@ const headers = computed(() => {
   }
 })
 
-const onSuccess = (resp,uploadFile,uploadFiles) => {
+const onSuccess = (resp) => {
   if(resp.status === 1){
     ElMessage.error(resp.message)
   }else{
